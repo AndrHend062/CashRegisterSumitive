@@ -107,6 +107,7 @@ namespace CashRegisterSumitive
                     drinksCost + "\n", arialFont, blackBrush, 380, 60);
 
 
+
             }
             catch
             {
