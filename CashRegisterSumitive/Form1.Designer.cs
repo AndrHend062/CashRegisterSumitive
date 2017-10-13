@@ -1,6 +1,6 @@
 ﻿namespace CashRegisterSumitive
 {
-    partial class Form1
+    partial class cashForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(cashForm));
             this.burgerNumber = new System.Windows.Forms.Label();
             this.friesLabel = new System.Windows.Forms.Label();
             this.drinksLabel = new System.Windows.Forms.Label();
@@ -41,6 +42,7 @@
             this.textBoxChange = new System.Windows.Forms.TextBox();
             this.changeLabel = new System.Windows.Forms.Label();
             this.receiptButton = new System.Windows.Forms.Button();
+            this.newButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // burgerNumber
@@ -93,6 +95,8 @@
             // 
             // calculateButton
             // 
+            this.calculateButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.calculateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.calculateButton.Location = new System.Drawing.Point(124, 137);
             this.calculateButton.Name = "calculateButton";
             this.calculateButton.Size = new System.Drawing.Size(100, 23);
@@ -116,10 +120,12 @@
             this.headerLabel.Name = "headerLabel";
             this.headerLabel.Size = new System.Drawing.Size(479, 34);
             this.headerLabel.TabIndex = 8;
-            this.headerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.headerLabel.Text = "Estonian ,gvvl/yo9chg/d78dv/t69o";
             // 
             // changeButton
             // 
+            this.changeButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.changeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.changeButton.Location = new System.Drawing.Point(124, 271);
             this.changeButton.Name = "changeButton";
             this.changeButton.Size = new System.Drawing.Size(100, 23);
@@ -144,19 +150,37 @@
             // 
             // receiptButton
             // 
+            this.receiptButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.receiptButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.receiptButton.Location = new System.Drawing.Point(127, 349);
             this.receiptButton.Name = "receiptButton";
             this.receiptButton.Size = new System.Drawing.Size(97, 23);
             this.receiptButton.TabIndex = 12;
             this.receiptButton.Text = "Print";
             this.receiptButton.UseVisualStyleBackColor = true;
+            this.receiptButton.Visible = false;
             this.receiptButton.Click += new System.EventHandler(this.receiptButton_Click);
             // 
-            // Form1
+            // newButton
+            // 
+            this.newButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.newButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.newButton.Location = new System.Drawing.Point(341, 349);
+            this.newButton.Name = "newButton";
+            this.newButton.Size = new System.Drawing.Size(97, 23);
+            this.newButton.TabIndex = 14;
+            this.newButton.Text = "New Order";
+            this.newButton.UseVisualStyleBackColor = true;
+            this.newButton.Visible = false;
+            this.newButton.Click += new System.EventHandler(this.newButton_Click);
+            // 
+            // cashForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(473, 371);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.ClientSize = new System.Drawing.Size(473, 383);
+            this.Controls.Add(this.newButton);
             this.Controls.Add(this.receiptButton);
             this.Controls.Add(this.changeLabel);
             this.Controls.Add(this.textBoxChange);
@@ -170,8 +194,10 @@
             this.Controls.Add(this.drinksLabel);
             this.Controls.Add(this.friesLabel);
             this.Controls.Add(this.burgerNumber);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "cashForm";
+            this.Text = "Cash";
+            this.Load += new System.EventHandler(this.cashForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,6 +218,7 @@
         private System.Windows.Forms.TextBox textBoxChange;
         private System.Windows.Forms.Label changeLabel;
         private System.Windows.Forms.Button receiptButton;
+        private System.Windows.Forms.Button newButton;
     }
 }
 
