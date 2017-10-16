@@ -54,7 +54,7 @@ namespace CashRegisterSumitive
                 friesCost = fries * FRIES_PRICE;
                 burgersCost = burgers * BURGER_PRICE;
                 drinksCost = drinks * DRINK_PRICE;
-                costBFD = burgersCost + drinksCost + friesCost;
+                costBFD = burgersCost + drinksCost + friesCost; //calculate prices 
                 taxPrice = costBFD * TAX;
                 totalPrice = taxPrice + costBFD;
                 changeDue = changePay - totalPrice;
@@ -77,9 +77,9 @@ namespace CashRegisterSumitive
             {
                 changePay = Convert.ToDouble(textBoxChange.Text);
 
-                changeDue = changePay - totalPrice;
+                changeDue = changePay - totalPrice; //calculate change 
 
-                changeLabel.Text = changeDue.ToString("C");
+                changeLabel.Text = changeDue.ToString("C");  // draw change 
                 receiptButton.Visible = true;
             }
             catch
@@ -105,7 +105,7 @@ namespace CashRegisterSumitive
 
 
 
-                offScreen.FillRectangle(whiteBrush, 300, 50, 150, 300);
+                offScreen.FillRectangle(whiteBrush, 300, 50, 150, 300); //print receipt 
                 offScreen.DrawString("             receipt  1" + "\n"+
                     "Burgers  X" + burgers + "\n" +
                     "Fries    X" + fries + "\n"+
@@ -114,7 +114,7 @@ namespace CashRegisterSumitive
                     "Tax \n"+ 
                     "Total \n" + "Tendered \n Change due "
                     , arialFont, blackBrush, 300, 60);
-                offScreen.DrawString(  "\n"+burgersCost + "\n" +
+                offScreen.DrawString(  "\n"+burgersCost + "\n" + //drawing values 
                     friesCost + "\n"+ 
                     drinksCost + "\n"+
                     costBFD +"\n"+
@@ -150,16 +150,6 @@ namespace CashRegisterSumitive
             offScreen.FillRectangle(whiteBrush, 300, 50, 150, 300);
 
             onScreen.DrawImage(bm, 0, 0);
-        }
-
-        private void cashForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void changeLabel_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

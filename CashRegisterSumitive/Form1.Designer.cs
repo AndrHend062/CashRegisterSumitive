@@ -148,7 +148,6 @@
             this.changeLabel.Name = "changeLabel";
             this.changeLabel.Size = new System.Drawing.Size(100, 23);
             this.changeLabel.TabIndex = 11;
-            this.changeLabel.Click += new System.EventHandler(this.changeLabel_Click);
             // 
             // receiptButton
             // 
