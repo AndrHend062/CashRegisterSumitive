@@ -74,7 +74,7 @@
             this.textBoxBurger.Location = new System.Drawing.Point(124, 35);
             this.textBoxBurger.Name = "textBoxBurger";
             this.textBoxBurger.Size = new System.Drawing.Size(100, 20);
-            this.textBoxBurger.TabIndex = 3;
+            this.textBoxBurger.TabIndex = 1;
             this.textBoxBurger.Text = "0";
             // 
             // textBoxfries
@@ -82,7 +82,7 @@
             this.textBoxfries.Location = new System.Drawing.Point(124, 70);
             this.textBoxfries.Name = "textBoxfries";
             this.textBoxfries.Size = new System.Drawing.Size(100, 20);
-            this.textBoxfries.TabIndex = 4;
+            this.textBoxfries.TabIndex = 2;
             this.textBoxfries.Text = "0";
             // 
             // textBoxdrinks
@@ -90,7 +90,7 @@
             this.textBoxdrinks.Location = new System.Drawing.Point(124, 100);
             this.textBoxdrinks.Name = "textBoxdrinks";
             this.textBoxdrinks.Size = new System.Drawing.Size(100, 20);
-            this.textBoxdrinks.TabIndex = 5;
+            this.textBoxdrinks.TabIndex = 3;
             this.textBoxdrinks.Text = "0";
             // 
             // calculateButton
@@ -100,14 +100,14 @@
             this.calculateButton.Location = new System.Drawing.Point(124, 137);
             this.calculateButton.Name = "calculateButton";
             this.calculateButton.Size = new System.Drawing.Size(100, 23);
-            this.calculateButton.TabIndex = 6;
+            this.calculateButton.TabIndex = 4;
             this.calculateButton.Text = "Calculate";
             this.calculateButton.UseVisualStyleBackColor = true;
             this.calculateButton.Click += new System.EventHandler(this.calculateButton_Click);
             // 
             // totalLable
             // 
-            this.totalLable.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.totalLable.BackColor = System.Drawing.Color.Red;
             this.totalLable.Location = new System.Drawing.Point(16, 175);
             this.totalLable.Name = "totalLable";
             this.totalLable.Size = new System.Drawing.Size(208, 67);
@@ -115,12 +115,13 @@
             // 
             // headerLabel
             // 
-            this.headerLabel.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.headerLabel.BackColor = System.Drawing.Color.Red;
+            this.headerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.headerLabel.Location = new System.Drawing.Point(-2, -2);
             this.headerLabel.Name = "headerLabel";
-            this.headerLabel.Size = new System.Drawing.Size(479, 34);
+            this.headerLabel.Size = new System.Drawing.Size(484, 34);
             this.headerLabel.TabIndex = 8;
-            this.headerLabel.Text = "Estonian ,gvvl/yo9chg/d78dv/t69o";
+            this.headerLabel.Text = "Mc Burger ";
             // 
             // changeButton
             // 
@@ -129,7 +130,7 @@
             this.changeButton.Location = new System.Drawing.Point(124, 271);
             this.changeButton.Name = "changeButton";
             this.changeButton.Size = new System.Drawing.Size(100, 23);
-            this.changeButton.TabIndex = 9;
+            this.changeButton.TabIndex = 6;
             this.changeButton.Text = "Change ";
             this.changeButton.UseVisualStyleBackColor = true;
             this.changeButton.Click += new System.EventHandler(this.changeButton_Click);
@@ -139,14 +140,15 @@
             this.textBoxChange.Location = new System.Drawing.Point(124, 245);
             this.textBoxChange.Name = "textBoxChange";
             this.textBoxChange.Size = new System.Drawing.Size(100, 20);
-            this.textBoxChange.TabIndex = 10;
+            this.textBoxChange.TabIndex = 5;
             // 
             // changeLabel
             // 
-            this.changeLabel.Location = new System.Drawing.Point(124, 322);
+            this.changeLabel.Location = new System.Drawing.Point(124, 314);
             this.changeLabel.Name = "changeLabel";
             this.changeLabel.Size = new System.Drawing.Size(100, 23);
             this.changeLabel.TabIndex = 11;
+            this.changeLabel.Click += new System.EventHandler(this.changeLabel_Click);
             // 
             // receiptButton
             // 
@@ -155,7 +157,7 @@
             this.receiptButton.Location = new System.Drawing.Point(127, 349);
             this.receiptButton.Name = "receiptButton";
             this.receiptButton.Size = new System.Drawing.Size(97, 23);
-            this.receiptButton.TabIndex = 12;
+            this.receiptButton.TabIndex = 7;
             this.receiptButton.Text = "Print";
             this.receiptButton.UseVisualStyleBackColor = true;
             this.receiptButton.Visible = false;
@@ -168,7 +170,7 @@
             this.newButton.Location = new System.Drawing.Point(341, 349);
             this.newButton.Name = "newButton";
             this.newButton.Size = new System.Drawing.Size(97, 23);
-            this.newButton.TabIndex = 14;
+            this.newButton.TabIndex = 8;
             this.newButton.Text = "New Order";
             this.newButton.UseVisualStyleBackColor = true;
             this.newButton.Visible = false;
@@ -178,7 +180,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(473, 383);
             this.Controls.Add(this.newButton);
             this.Controls.Add(this.receiptButton);

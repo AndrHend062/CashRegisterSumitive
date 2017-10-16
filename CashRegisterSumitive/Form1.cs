@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace CashRegisterSumitive
 {
@@ -108,7 +109,7 @@ namespace CashRegisterSumitive
                     "Drinks   X" +drinks + "\n"+
                     "Sub total" +"\n"+
                     "Tax \n"+ 
-                    "Total \n" + "Tendered"
+                    "Total \n" + "Tendered \n Change due "
                     , arialFont, blackBrush, 300, 60);
                 offScreen.DrawString(  "\n"+burgersCost + "\n" +
                     friesCost + "\n"+ 
@@ -116,7 +117,9 @@ namespace CashRegisterSumitive
                     costBFD +"\n"+
                     taxPrice+ "\n"+
                     totalPrice+ "\n"+
-                    changePay
+                    changePay + "\n"+
+                    changeDue
+
                     , arialFont, blackBrush, 380, 60);
 
 
@@ -147,6 +150,11 @@ namespace CashRegisterSumitive
         }
 
         private void cashForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void changeLabel_Click(object sender, EventArgs e)
         {
 
         }
