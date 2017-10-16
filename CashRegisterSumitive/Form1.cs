@@ -101,6 +101,7 @@ namespace CashRegisterSumitive
                 Pen penPen = new Pen(Color.Red, 10);
                 Font arialFont = new Font("Arial", 10, FontStyle.Regular);
                 SoundPlayer printPlayer = new SoundPlayer(Properties.Resources.print);
+                printPlayer.Play();
 
 
 
