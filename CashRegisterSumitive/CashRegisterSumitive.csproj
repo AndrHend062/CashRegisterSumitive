@@ -78,5 +78,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LaserJet Printer-SoundBible.com-1733940615.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
